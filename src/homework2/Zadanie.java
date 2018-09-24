@@ -1,3 +1,5 @@
+package homework2;
+
 public class Zadanie {
 
     public static char getThirdChar(String string) {
