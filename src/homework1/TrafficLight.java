@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+    /* This class realizes traffic light.
+     * Enter number of minutes in console and you will get the current color.
+     */
 public class TrafficLight {
-    // This class realizes traffic light.
-    // Enter number of minutes in console and you will get the current color.
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int in = Integer.parseInt(reader.readLine());
@@ -16,7 +17,7 @@ public class TrafficLight {
         }
     }
 
-    private static String getTrafficLightColor (int time) {
+    private static String getTrafficLightColor(int time) {
         if (time >= 0) {
             if (time % 10 >= 0 && time % 10 < 2) {
                 return "Red";
