@@ -8,7 +8,7 @@ public class Task2 {
      * 9.100. Given a word. Swap it's second and fifth parts.
      */
     public static char getThirdChar(String string) {
-        if (string.length() < 3 || string == null) {
+        if (string == null || string.length() < 3) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             return string.charAt(2);
@@ -16,7 +16,7 @@ public class Task2 {
     }
 
     public static char getLastChar(String string) {
-        if (string.length() == 0 || string == null) {
+        if (string == null || string.length() == 0) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             return string.charAt(string.length() - 1);
@@ -24,7 +24,7 @@ public class Task2 {
     }
 
     public static char getTargetChar(String string, int target) {
-        if (string.length() < target || string == null) {
+        if (string == null || string.length() < target) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             return string.charAt(target - 1);
@@ -32,7 +32,7 @@ public class Task2 {
     }
 
     public static int getSummOfEqualsChars(String string) {
-        if (string.length() == 0 || string == null) {
+        if (string == null || string.length() == 0) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             int count = 0;
@@ -53,7 +53,7 @@ public class Task2 {
     }
 
     public static String swapSecondAndFifth(String string) {
-        if (string.length() < 5 || string == null) {
+        if (string == null || string.length() < 5) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             char[] chars = string.toCharArray();
@@ -65,7 +65,7 @@ public class Task2 {
     }
 
     public static String reverse(String string) {
-        if (string.length() == 0 || string == null) {
+        if (string == null || string.length() == 0) {
             throw new IllegalArgumentException("Illegal argument");
         } else {
             char[] chars = string.toCharArray();
