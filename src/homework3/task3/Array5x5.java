@@ -33,7 +33,7 @@ public class Array5x5 {
         return stringBuilder.toString();
     }
 
-    public String printUpToDownt() {
+    public String printUpToDown() {
         if (arr.length == 0) {
             throw new IllegalArgumentException("array should not be empty");
         }

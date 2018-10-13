@@ -10,6 +10,6 @@ public class Main {
                 {"30", "31", "32", "33", "34"},
                 {"40", "41", "42", "43", "44"}};
         System.out.println(array5x5.printLeftToRight());
-        System.out.println(array5x5.printUpToDownt());
+        System.out.println(array5x5.printUpToDown());
     }
 }
